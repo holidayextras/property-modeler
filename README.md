@@ -1,10 +1,9 @@
-
 This project aims to bring some level of data/type safety to NodeJS whilst allowing us to define clean data models.
 
 Check out the tests for a clear picture of how powerful this is.
 
 This is everything thrown together into one place for quick reference:
-
+```js
 	var Modeler = require("../Modeler.js");
 	var className = 'MyClassName';
 
@@ -63,5 +62,4 @@ This is everything thrown together into one place for quick reference:
 
 	module.exports = ThisClass;
 	Modeler.register(ThisClass, className);
-
-
+```
