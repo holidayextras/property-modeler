@@ -88,6 +88,9 @@ var Person = function(json) {
       validation: {
         looksLike: 'money'
       }
+    },
+    Age: {
+      type: "number"
     }
   }, this, json);
 };

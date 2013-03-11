@@ -2,7 +2,7 @@
   "author": "Oliver Rumbelow <oliver.rumbelow@holidayextras.com> (http://www.holidayextras.co.uk/)",
   "name": "property-modeler",
   "description": "A module for enforcing strict rules on object properties",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/holidayextras/property-modeler.git"

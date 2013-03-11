@@ -26,6 +26,8 @@ personA.Locations.push(new Address({
   county: 'Kent', 
   postcode: 'CT21 4JF' 
 }));
+personA.Age = 24;
+personA.Age = "Fourty";
 personA.Locations[0].doubleUpStreet();
 personA.Expenses = ["105", "101.0", "106.00", 103, 104.0, 100.00];
 personA.Expenses.push("102.99");
@@ -41,6 +43,7 @@ assert.ok(personA.Locations[0] instanceof Address, "Address should be an instanc
 assert.equal(personA.Locations[0].toString(), "ASHFORD ROADASHFORD ROAD, hythe, Kent, CT21 4JF", "Address should be correct");
 assert.equal(personA.Expenses.length, 7, "Person should have 7 expenses");
 assert.deepEqual(personA.Expenses, ['100.00', '101.00', '102.99', '103.00', '104.00', '105.00', '106.00'], "Expenses should be in order");
+assert.equal(personA.Age, 24, "Person's Age should only accept numbers");
 
 //
 // Play with our Person's Date of Birth
