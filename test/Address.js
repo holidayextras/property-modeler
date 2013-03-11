@@ -2,7 +2,7 @@ var Modeler = require("../lib/Modeler.js");
 
 var className = 'Address';
 
-var ThisClass = function(json) {
+var Address = function(json) {
   
   this.toString = function() {
     return this.Street+", "+this.Town+", "+this.County+", "+this.Postcode;
@@ -12,7 +12,7 @@ var ThisClass = function(json) {
     this.Street += this.Street;
   };
   
-  Modeler.extend(className, {
+  Modeler.extend("Address", {
     Street: {
       type: "string",
       default: "",
@@ -47,5 +47,5 @@ var ThisClass = function(json) {
   }, this, json);
 };
 
-module.exports = ThisClass;
-Modeler.register(ThisClass, className);
+module.exports = Address;
+Modeler.register(Address, className);

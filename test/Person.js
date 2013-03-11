@@ -2,7 +2,7 @@ var Modeler = require("../lib/Modeler.js");
 
 var className = 'Person';
 
-var ThisClass = function(json) {
+var Person = function(json) {
   // This class should provide an addAddress function
   this.addAddress = function(newAddress) {
     // All our instances properties will be attached to 'this'
@@ -15,7 +15,7 @@ var ThisClass = function(json) {
   }
   
   // This is the part which enforces rules on each property:
-  Modeler.extend(className, {
+  Modeler.extend("Person", {
     // We want a property called 'Title'
     Title: {
       // it should be a text string
@@ -92,5 +92,5 @@ var ThisClass = function(json) {
   }, this, json);
 };
 
-module.exports = ThisClass;
-Modeler.register(ThisClass, className);
+module.exports = Person;
+Modeler.register(Person, className);
